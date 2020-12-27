@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://java.sun.com/jsf/core">
+<head>
+<style>
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+</style>
+<title>Auto Park Application</title>
+</head>
+<body>
+	<div
+		style="width: 50%; font-size: 36px; line-height: 48px; font-family: Times New Roman; background-color: black; color: white;">Park-Auto-Application</div>
+	<h:form
+		style='color: #FF0000; font-size: 24px; font-family: "Times New Roman", Serif; width: 514px; '>
+         Car Registration Number: 
+         <h:selectOneMenu style="width: 248px; "></h:selectOneMenu>
+		<br />Driver Name: 
+         <h:inputText
+			style='color: #0000A0; font-size: 12px; font-family: "Times New Roman", Serif; width: 233px; '></h:inputText>
+		<br />
+		<br />Transport Type: <input type="radio" />Cargo <input
+			type="radio" />Benzin 
+      </h:form>
+	<h:form
+		style='width: 516px; color: #FF0000; font-size: 24px; font-family: "Times New Roman", Serif'>
+         Fuel Type: <input type="radio" />Benzin <input type="radio" /> Diesel<br />
+		<br />Model & Brand:
+         <h:inputText
+			style='color: #0000A0; font-size: 12px; font-family: "Times New Roman", Serif; width: 233px; '></h:inputText>
+		<br />
+		<br />KM on Board:
+         <h:inputText
+			style='color: #0000A0; font-size: 12px; font-family: "Times New Roman", Serif; width: 233px; '></h:inputText>
+	</h:form>
+	<h:form
+		style='width: 516px; color: #FF0000; font-size: 24px; font-family: "Times New Roman", Serif'>
+         RoadMap no.:
+         <h:inputText
+			style='color: #0000A0; font-size: 12px; font-family: "Times New Roman", Serif; width: 233px; '></h:inputText>
+		<br />
+		<br />Work Unit: 
+         <h:selectOneMenu style="width: 248px; "></h:selectOneMenu>
+		<br />
+		<br />Operating Data: 
+         <h:inputText
+			style='color: #0000A0; font-size: 12px; font-family: "Times New Roman", Serif; width: 233px; '></h:inputText>
+	</h:form>
+	<div
+		style="width: 100%; font-size: 24px; font-family: Times New Roman; width: 295px; color: white; background-color: black">
+		Generate Partial RoadMap</div>
+	<h:form
+		style='width: 892px; font-weight: bold; font-size: 14px; font-family: "Times New Roman", Serif; '>
+         Choose the clients where you intend to stop: 
+         <br />
+		<table>
+			<tr>
+				<th>Stop</th>
+				<th>Name</th>
+				<th>Address</th>
+				<th>Phone number</th>
+			</tr>
+			<tr>
+				<td><input type="checkbox" /></td>
+				<td>SC Maxshop SRL</td>
+				<td>Str. Alee Alexa Gheorghe, prof. dr. ing.</td>
+				<td>+403289437322</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" /></td>
+				<td>SC ProdimPex</td>
+				<td>Str. Fundac Racovita Emil</td>
+				<td>+407394834292</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" /></td>
+				<td>SA Dragu Import SRL</td>
+				<td>Str. Pasaj Muzicescu Gavril</td>
+				<td>+407893234833</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" /></td>
+				<td>SC Praxis SRL</td>
+				<td>Str. Alexandrescu Emil</td>
+				<td>+407234117809</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" /></td>
+				<td>SC World Shop SRL</td>
+				<td>Str. Barnutiu Simion</td>
+				<td>+407235604546</td>
+			</tr>
+		</table>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+			type="submit"
+			style="background-color: #FFFFFF; border-right-style: groove; border-bottom-color: #000000; border-left-style: groove; border-left-color: #000000; border-top-color: #000000; border-bottom-style: groove; border-right-color: #000000; border-top-style: groove; width: 76px"
+			value="Save" />
+		<input type="submit"
+			style="background-color: #FFFFFF; border-right-style: groove; border-bottom-color: #000000; border-left-style: groove; border-left-color: #000000; border-top-color: #000000; border-bottom-style: groove; border-right-color: #000000; border-top-style: groove; width: 78px"
+			value="Delete" />
+		<table></table>
+		<form>
+			<input type="submit"
+				style="background-color: #FFFFFF; border-right-style: groove; border-bottom-color: #000000; border-left-style: groove; border-left-color: #000000; border-top-color: #000000; border-bottom-style: groove; border-right-color: #000000; border-top-style: groove"
+				value="Add RoadMap" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+				type="submit"
+				style="background-color: #FFFFFF; border-right-style: groove; border-bottom-color: #000000; border-left-style: groove; border-left-color: #000000; border-top-color: #000000; border-bottom-style: groove; border-right-color: #000000; border-top-style: groove"
+				value="Modify RoadMap" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+				type="submit"
+				style="background-color: #FFFFFF; border-right-style: groove; border-bottom-color: #000000; border-left-style: groove; border-left-color: #000000; border-top-color: #000000; border-bottom-style: groove; border-right-color: #000000; border-top-style: groove"
+				value="Cancel RoadMap" /><br /> <br />
+		</form>
+	</h:form>
+</body>
+</html>
